@@ -1,0 +1,29 @@
+1. BASIC LOOPS
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+
+
+2. FOR LOOPS WITH ARRAY
+
+function printArrayElements(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+
+
+3.NESTED FOR LOOPS
+function createMultiplicationTable(n) {
+    let table = [];
+    for (let i = 1; i <= n; i++) {
+        let row = [];
+        for (let j = 1; j <= n; j++) {
+            row.push(i * j);
+        }
+        table.push(row);
+    }
+    return table;
+}

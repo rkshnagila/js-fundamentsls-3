@@ -1,0 +1,30 @@
+1. BASIC WHILE LOOP
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+
+2. WHILE LOOP WITH CONDITION
+
+function countDownFrom(n) {
+    while (n >= 0) {
+        console.log(n);
+        n--;
+    }
+
+
+3. WHILE LOOP WITH BREAK CONDITION
+
+function findFirstEven(numbers) {
+    let i = 0;
+    while (i < numbers.length) {
+        if (numbers[i] % 2 === 0) {
+            return numbers[i];
+        }
+        i++;
+    }
+    return null; 
+}

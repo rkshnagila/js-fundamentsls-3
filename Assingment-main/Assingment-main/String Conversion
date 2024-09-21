@@ -1,0 +1,11 @@
+function convertToString(value) {
+    return String(value);
+}
+
+
+console.log(convertToString(123));             
+console.log(convertToString(45.67));           
+console.log(convertToString(true));           
+console.log(convertToString(false));           
+console.log(convertToString([1, 2, 3]));      
+console.log(convertToString({name: "John"}));

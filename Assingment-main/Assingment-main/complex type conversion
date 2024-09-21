@@ -1,0 +1,13 @@
+function convertAndCompare(a, b, type = "number") {
+    if (type === "number") {
+        return Number(a) === Number(b);
+    } else if (type === "string") {
+        return String(a) === String(b);
+    } else {
+        throw new Error("Unsupported conversion type");
+    }
+}
+
+
+console.log(convertAndCompare("10", 10));             
+console.log(convertAndCompare("20.5", 20.5));         

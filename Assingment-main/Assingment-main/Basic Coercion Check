@@ -1,0 +1,7 @@
+function checkCoercion(a, b) {
+    console.log(`Loose equality (==) between ${a} and ${b}:`, a == b);
+    console.log(`Strict equality (===) between ${a} and ${b}:`, a === b);
+}
+
+
+checkCoercion("5", 5);

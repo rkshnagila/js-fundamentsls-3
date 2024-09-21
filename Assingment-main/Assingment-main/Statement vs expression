@@ -1,0 +1,36 @@
+ 1. 
+
+// Expression
+let sum = 2 + 2;  // Resolves to 4
+
+// Statement
+if (sum === 4) {
+    console.log("Sum is 4");  // Statement block
+ }
+
+2. EXPRESSION  in Function:
+
+function expressionInFunction(a, b) {
+    return a + b; 
+}
+
+if (expressionInFunction(3, 4) === 7) {
+    console.log("Expression result is 7");  
+}
+
+
+
+3. COMPLEX  EXPRESSION  in Conditional:
+
+function complexExpression(a, b, c) {
+    let sum = a + b;
+    let product = b * c;
+
+    if (sum > product) {
+        return `Sum (${sum}) is greater than product (${product})`;
+    } else if (sum < product) {
+        return `Sum (${sum}) is less than product (${product})`;
+    } else {
+        return `Sum (${sum}) is equal to product (${product})`;
+    }
+}

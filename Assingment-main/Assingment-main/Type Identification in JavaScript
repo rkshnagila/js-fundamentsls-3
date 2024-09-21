@@ -1,0 +1,37 @@
+1.  Identify Type Using
+
+function identifyType(value) {
+    console.log(`Type of ${value}:`, typeof value);
+}
+
+
+2. Check Object vs Array:
+
+function isArrayOrObject(value) {
+    if (Array.isArray(value)) {
+        return "Array";
+    } else if (typeof value === "object" && value !== null) {
+        return "Object";
+    } else {
+        return `Other type: ${typeof value}`;
+    }
+}
+
+
+3. complex Type Identification:
+
+function identifyComplexType(values) {
+    return values.map(value => {
+        if (Array.isArray(value)) {
+            return "Array";
+        } else if (value instanceof Function) {
+            return "Function";
+        } else if (value instanceof Object) {
+            return "Object";
+        } else {
+            return typeof value;
+        }
+    });
+}
+
+

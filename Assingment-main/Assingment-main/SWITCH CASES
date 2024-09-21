@@ -1,0 +1,52 @@
+1. BASIC SWITCH CASES
+function getDayOfWeek(dayNumber) {
+    switch (dayNumber) {
+        case 1: return "Monday";
+        case 2: return "Tuesday";
+        case 3: return "Wednesday";
+        case 4: return "Thursday";
+        case 5: return "Friday";
+        case 6: return "Saturday";
+        case 7: return "Sunday";
+        default: return "Invalid day number";
+    }
+}
+
+
+2.SWITCH CASES WITH FALL THROUGH
+
+function getDayOfWeek(dayNumber) {
+    switch (dayNumber) {
+        case 1: return "Monday";
+        case 2: return "Tuesday";
+        case 3: return "Wednesday";
+        case 4: return "Thursday";
+        case 5: return "Friday";
+        case 6:  // Fall-through
+        case 7: return "Weekend";
+        default: return "Invalid day number";
+    }
+}
+
+
+
+3.SWITCH CASES WITH MULTIPLE CONDITIONS
+
+function classifyAnimal(animal) {
+    switch (animal.toLowerCase()) {
+        case "dog":
+        case "cat":
+        case "human":
+            return "Mammal";
+        case "sparrow":
+        case "eagle":
+        case "penguin":
+            return "Bird";
+        case "snake":
+        case "lizard":
+        case "crocodile":
+            return "Reptile";
+        default:
+            return "Unknown animal classification";
+    }
+}
